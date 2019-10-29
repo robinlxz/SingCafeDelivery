@@ -1,0 +1,23 @@
+{
+  "name": "singcafeweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robinlxz/SingCafeWeb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robinlxz/SingCafeWeb/issues"
+  },
+  "homepage": "https://robinlxz.github.io/singcafe",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}
