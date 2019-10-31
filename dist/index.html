@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -8,185 +8,132 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>SingCafe Website</title>
-  </head>
+    <title>SingCafe</title>
+</head>
 
-  <body>
-    
-
-    <div class="container">
-      <h1 class="indigo-text">Welcome to SingCafe</h1>
-      <h1 class="flow-text">COLORS</h1>
-      <div class="indigo lighten-2">indigo lighten-2</div>
-      <div class="cyan darken-2 white-text">cyan darken-2</div>
-
-      <h1 class="flow-text">BUTTONS</h1>
-      <button class="btn">Read More</button>
-      <br>
-      <br>
-      <button class="btn waves-effect btn-large">waves-effect button</button>
-      <br>
-      <br>
-      <button class="btn disabled">Sold out</button>
-      <br>
-      <br>
-      <button class="btn btn-large cyan darken-2"><i class="material-icons left">cloud</i>icon btn</button>
-
-
-      <!-- Floating Button -->
-      <a href="#!" class="btn-floating red btn-large"><i class="large material-icons">add</i></a>
-
-      <!-- Fixed Action Button -->
-      <div class="fixed-action-btn">
-          <a href="#!" class="btn-floating red btn-large"><i class="large material-icons">mode_edit</i></a>
-          <ul>
-            <li><button class="btn yellow waves-effect darken-2">MX</button></li>  
-            <li><button class="btn waves-light light-2">CQ</button></li>
-            <li><button class="btn red darken-2">SS</button></li>
-            <li><button class="btn disabled">XZ</button></li>
-          </ul>
-      </div>
-
-      <h1 class="flow-text">HELPERS</h1>
-
-      <!-- Alignment -->
-      <div>
-        <h5 class="left-align">This aligns to the left</h5>
-      </div>
-      <div>
-        <h5 class="center-align">This aligns to the center</h5>
-      </div>
-      
-      <!-- Quick Floats -->
-      <div class="right">Right Float</div>
-      <!-- Clear for floats ?? -->
-      <div class="clearfix"></div>
-
-      <!-- Hide Content for different device -->
-      <div class="hide-on-small-only">This won't show on <span class="red-text">mobile</span>  device</div>
-      <div class="hide-on-med-and-up">This won't show on <span class="red-text">tablet or desktops</span></div>
-
-      <!-- Truncate -->
-      <h4 class="truncate">This part of the text will be truncate. No matter how long it is it will only show the truncate part for it. The rest won't show.</h4>
-
-      <!-- EFFECTS -->
-      <h1 class="flow-text">Some Effects</h1>
-      <div class="red white-text hoverable">Hoverable content</div>
-      <br>
-      <div class="blue white-text _pulse">"BUY NOW" Pulse paused</div>
-
-      <!-- Shadow -->
-      <p class="z-depth-1">z-depth-1</p>
-      <p class="z-depth-3">z-depth-3</p>
-      <p class="z-depth-5">z-depth-5</p>
-
-      <h1 class="flow-text">Image, tap it!</h1>
-      <img src="https://i.ibb.co/fxr1DZG/food1.jpg" alt="food1" class="materialboxed circle responsive-img" data-caption="One of Ms.Chu's favorite">
-      <img class="materialboxed responsive-img" data-caption="Chef Mao's secret Cusine" src="https://i.ibb.co/7CxdCGG/food2.jpg">
-
-      <h1 class="flow-text">Card, show the hided info</h1>
-      <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="https://i.ibb.co/gj1s8HJ/place1.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Sing Cafe<i class="material-icons right">more_vert</i></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Place<i class="material-icons right">close</i></span>
-            <p>New window is open on Raffles Place! Address is 123456</p>
-          </div>
-      </div>
-
-
-    </div><!-- ./container -->
-
-    <h1 class="flow-text">Navigation bar</h1>
-    <!-- Logo left -->
+<body>
+  <div class="navbar-fixed">
     <nav>
-      <div class="nav-wrapper indigo lighten-2">
-        <a href="" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right hide-one-med-and-down">
-          <li><a href="#">Home</a></li>
-          <li><a href="https://robinlxz.github.io/SingCafeWeb/about.html">About</a></li>
-          <li><a href="#!">Contact</a></li>
-          <li><a href="#!"><i class="material-icons">search</i></a></li>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">SingCafe</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#carousel">Home</a></li>
+          <li><a href="#food">Food</a></li>
+          <li><a href="#place">Address</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="#carousel">Home</a></li>
+          <li><a href="#food">Food</a></li>
+          <li><a href="#place">Address</a></li>
         </ul>
       </div>
     </nav>
+  </div>
 
-    <!-- DropDown -->
-    <ul id="dropdown1" class="dropdown-content center">
-      <li><a href="#!">MX</a></li>
-      <li><a href="#!">CQ</a></li>
-      <li class="divider"></li>
-      <li><a href="#!">New member</a></li>
-    </ul>
-    <nav>
-        <div class="nav-wrapper indigo lighten-1">
-          <a href="" class="brand-logo center">Logo</a>
-          <ul id="nav-mobile" class="left hide-one-med-and-down">
-            <li><a href="#">Home</a></li>
-            <li><a href="https://robinlxz.github.io/SingCafeWeb/about.html">About</a></li>
-            <li><a href="#" class="dropdown-button" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="#!">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      <br>
-      <!-- Search Bar -->
-      <h1 class="flow-text">Search Bar</h1>
-      <nav>
-        <div class="nav-wrapper">
-          <form>
-            <div class="input-field">
-              <input type="search" id="search" required>
-              <label for="search" class="label-icon"><i class="material-icons">search</i></label>
-              <i class="material-icons">close</i>
-            </div>
-          </form>
-        </div>
-      </nav>
-
-      <br>
-      <br>
-
-      <!-- Mobile and Desktop NavBar -->
-      <nav>
-          <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">Logo</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-            </ul>
-            <ul class="side-nav" id="mobile-demo">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-            </ul>
-          </div>
-        </nav>
-
-
-
-    <div style="height:200px"></div>
+  <div class="container" id="carousel">
+    <h1 class="flow-text">Welcome to SingCafe</h1>
+    <!-- CAROUSEL -->
+    <div class="carousel">
+      <a href="#one!" class="carousel-item">
+        <img src="https://i.ibb.co/gj1s8HJ/place1.jpg" alt="">
+      </a>
+      <a href="#two!" class="carousel-item">
+        <img src="https://i.ibb.co/jHtMbp5/place2.jpg" alt="">
+      </a>
+      <a href="#three!" class="carousel-item">
+        <img src="https://i.ibb.co/fxr1DZG/food1.jpg" alt="">
+      </a>
+      <a href="#four!" class="carousel-item">
+        <img src="https://i.ibb.co/7CxdCGG/food2.jpg" alt="">
+      </a>
+      <a href="#five!" class="carousel-item">
+        <img src="https://i.ibb.co/PWCTff7/food3.jpg" alt="">
+      </a>
+    </div>
     
-
-
-
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-       <!-- <script>
-        $(document).ready(function(){
-          $('.sidenav').sidenav();
-        });
-       </script> -->
-       <script>
-          $(".button-collapse").sideNav();
-       </script>
-  </body>
+    <!-- CAROUSEL FULL SLIDER-->
+    <!-- <h1 class="flow-text">CAROUSEL FULL SLIDER</h1>
+    <div class="carousel carousel-slider">
+      <a href="#one!" class="carousel-item">
+        <img src="https://i.ibb.co/gj1s8HJ/place1.jpg" alt="">
+      </a>
+      <a href="#two!" class="carousel-item">
+        <img src="https://i.ibb.co/jHtMbp5/place2.jpg" alt="">
+      </a>
+      <a href="#three!" class="carousel-item">
+        <img src="https://i.ibb.co/fxr1DZG/food1.jpg" alt="">
+      </a>
+      <a href="#four!" class="carousel-item">
+        <img src="https://i.ibb.co/7CxdCGG/food2.jpg" alt="">
+      </a>
+      <a href="#five!" class="carousel-item">
+        <img src="https://i.ibb.co/PWCTff7/food3.jpg" alt="">
+      </a>
+    </div> -->
+    
+  </div><!-- ./container -->
+  
+  <div class="container" id="food">
+    <h1 class="flow-text">Food. tap it!</h1>
+    <img src="https://i.ibb.co/fxr1DZG/food1.jpg" alt="food1" class="materialboxed responsive-img" data-caption="One of Ms.Chu's favorite">
+    <br>
+    <img class="materialboxed responsive-img" data-caption="Chef Mao's secret Cusine" src="https://i.ibb.co/7CxdCGG/food2.jpg">
+    <br>
+    <img class="materialboxed responsive-img" data-caption="SS's favorite Pork Rice" src="https://i.ibb.co/PWCTff7/food3.jpg">
+  </div>
+  
+  <div class="container" id="place">
+    <h1 class="flow-text">Places. Tap to show the address</h1>
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="https://i.ibb.co/jHtMbp5/place2.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">First SingCafe<i class="material-icons right">more_vert</i></span>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">1st Stall<i class="material-icons right">close</i></span>
+        <p>First is open on Lau Pa Sat! Address is 123456.
+          <br>Opening hour: 11:00~20:00, Monday~Sunday.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="https://i.ibb.co/gj1s8HJ/place1.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Second SingCafe<i class="material-icons right">more_vert</i></span>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">2nd Stall<i class="material-icons right">close</i></span>
+        <p>New one is open on Raffles Place! Address is 654321.
+          <br>Opening hour: 11:00~20:00, Monday~Sunday.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+      <button class="btn waves-effect btn-large">CONNECT</button>
+  </div>
+  <div style="height:200px"></div>
+  
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Init Nav bar
+      $(".button-collapse").sideNav();
+      
+      // Init Carousel
+      $('.carousel').carousel();
+      
+      // Init Carousel Slider
+      $('.carousel.carousel-slider').carousel({fullWidth:true});
+    });
+  </script>
+</body>
 </html>
