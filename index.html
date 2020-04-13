@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SingCafe</title>
+</head>
+
+<body>
+  <!-- <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">SingCafe</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#carousel">Home</a></li>
+          <li><a href="#food">Food</a></li>
+          <li><a href="#place">Address</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="#carousel">Home</a></li>
+          <li><a href="#food">Food</a></li>
+          <li><a href="#place">Address</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div> -->
+
+  <div class="container" id="carousel">
+    <h1 class="flow-text">Welcome to SingCafe</h1>
+    <!-- CAROUSEL -->
+    <div class="carousel">
+      <a href="#one!" class="carousel-item">
+        <img src="https://i.ibb.co/XFh2H4B/Sing-Cafe-board.jpg" alt="">
+      </a>
+      <a href="#two!" class="carousel-item">
+        <img src="https://i.ibb.co/YdwsDXj/food1.jpg" alt="">
+      </a>
+      <a href="#three!" class="carousel-item">
+        <img src="https://i.ibb.co/NF5Yhmc/food2.jpg" alt="">
+      </a>
+      <a href="#four!" class="carousel-item">
+        <img src="https://i.ibb.co/GcbBm2f/food3.jpg" alt="">
+      </a>
+    </div>    
+  </div><!-- ./container -->
+  
+  <div class="container" id="place">
+    <h1 class="flow-text">Cuisine</h1>
+
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="https://i.ibb.co/YdwsDXj/food1.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Signature Scrambled Egg With Pork Chop Rice<i class="material-icons right">more_vert</i></span>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Extra<i class="material-icons right">close</i></span>
+        <ul>
+          <li>Add meat: $2</li>
+          <li>Add egg: $2</li>
+          <li>Add veg: $1</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="https://i.ibb.co/NF5Yhmc/food2.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Salted Baked Chicken Rice<i class="material-icons right">more_vert</i></span>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Extra<i class="material-icons right">close</i></span>
+        <ul>
+          <li>Add egg: $2</li>
+          <li>Add veg: $1</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="https://i.ibb.co/GcbBm2f/food3.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Signature Braised Pork Belly Rice<i class="material-icons right">more_vert</i></span>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Extra<i class="material-icons right">close</i></span>
+        <ul>
+          <li>Add meat: $2</li>
+          <li>Add egg: $2</li>
+          <li>Add veg: $1</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  
+
+  <div class="container" id="info">
+    <h1 class="flow-text">Menu</h1>
+    <img src="https://i.ibb.co/82VqSry/menu.jpg" alt="menu" class="materialboxed responsive-img" data-caption="Menu for SingCafe food delivery">
+    <br>
+    <img class="materialboxed responsive-img" data-caption="How to order" src="https://i.ibb.co/SQW1m3H/order-method.jpg">
+    <br>
+    <img class="materialboxed responsive-img" data-caption="Service Area" src="https://i.ibb.co/yyMkhPw/area-service.jpg">
+  </div>
+  
+  
+  <div class="container">
+      <button class="btn waves-effect btn-large">Order Now</button>
+  </div>
+  <div style="height:200px"></div>
+  
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Init Nav bar
+      $(".button-collapse").sideNav();
+      
+      // Init Carousel
+      $('.carousel').carousel();
+      
+      // Init Carousel Slider
+      $('.carousel.carousel-slider').carousel({fullWidth:true});
+    });
+  </script>
+</body>
+</html>
